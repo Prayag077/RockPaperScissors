@@ -25,7 +25,6 @@ h1:hover{
     font-size: 50px;
 }
 
-
 .choice {
 
     height: 165px;
@@ -122,8 +121,8 @@ img {
 
     .choices {
         flex-direction: column;
-        gap: 1px;
-        margin-top: 1px;
+        gap: 0px;
+        margin-top: 0px;
     }
 
     .choice {
@@ -137,8 +136,8 @@ img {
     }
 
     .score-board {
-        flex-direction: column;
-        gap: 2rem;
+       
+        gap: 4rem;
         font-size: 1.5rem;
     }
 
@@ -148,14 +147,15 @@ img {
     }
 
     .msg-container {
-        margin-top: 1.5rem;
+        margin-top: 1rem;
     }
 
     #msg {
         font-size: 1.2rem;
-        padding: 1rem;
+        padding: .4rem;
         word-wrap: break-word;
         max-width: 90vw;
+        display: inline-block;
     }
 
     #reset-msg {
