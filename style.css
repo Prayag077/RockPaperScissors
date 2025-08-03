@@ -1,0 +1,169 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+body {
+    background-color: #E8E1EF;
+}
+
+
+h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80px;
+    background-color: #6A7FDB;
+    color: white;
+    font-family: monospace;
+    cursor: pointer;
+    font-size: 40px;
+}
+
+h1:hover{
+    font-size: 50px;
+}
+
+
+.choice {
+
+    height: 165px;
+    width: 165px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.choice:hover {
+    border-radius: 50%;
+    cursor: pointer;
+    background-color: black;
+
+
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.score-board {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    gap: 5rem;
+}
+
+
+#user-score,
+#comp-score {
+    font-size: 4rem;
+}
+
+.msg-container {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #6A7FDB;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    font-family: monospace;
+}
+
+#reset {
+    margin-top: 50px;
+}
+
+#reset-msg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #143547;
+    color: white;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: .5rem;
+    cursor: pointer;
+    font-family: monospace;
+}
+
+#reset-msg:hover {
+
+    padding: 20px;
+}
+
+.hide {
+    display: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 1.8rem;
+        height: 60px;
+    }
+
+    .choices {
+        flex-direction: column;
+        gap: 1px;
+        margin-top: 1px;
+    }
+
+    .choice {
+        height: 120px;
+        width: 120px;
+    }
+
+    .choice img {
+        height: 100px;
+        width: 100px;
+    }
+
+    .score-board {
+        flex-direction: column;
+        gap: 2rem;
+        font-size: 1.5rem;
+    }
+
+    #user-score,
+    #comp-score {
+        font-size: 3rem;
+    }
+
+    .msg-container {
+        margin-top: 1.5rem;
+    }
+
+    #msg {
+        font-size: 1.2rem;
+        padding: 1rem;
+        word-wrap: break-word;
+        max-width: 90vw;
+    }
+
+    #reset-msg {
+        padding: 1.2rem;
+        font-size: 1.8rem;
+    }
+
+    #reset-msg:hover {
+        padding: 0.8rem;
+    }
+}
